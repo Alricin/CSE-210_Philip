@@ -15,6 +15,7 @@ class Program
             number_list.Add(number_entry);
         }
         int list_sum = 0;
+        int list_max = 0;
         foreach (int number in number_list)
         {
             list_sum += number;
