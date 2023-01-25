@@ -18,7 +18,16 @@ class Program
         foreach (int number in number_list)
         {
             list_sum += number;
+            if (list_max < number)
+            {
+                list_max = number;
+            }
         }
         Console.WriteLine($"Your sum is {list_sum}");
+        int entry_number = number_list.Count;
+        int list_average = list_sum/entry_number;
+        Console.WriteLine($"Your average is {list_average}");
+        Console.WriteLine($"Your highest number is {list_max}");
+
     }
 }
