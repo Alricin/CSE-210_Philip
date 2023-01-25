@@ -14,6 +14,11 @@ class Program
             number_entry = int.Parse(number_input);
             number_list.Add(number_entry);
         }
-        
+        int list_sum = 0;
+        foreach (int number in number_list)
+        {
+            list_sum += number;
+        }
+        Console.WriteLine($"Your sum is {list_sum}");
     }
 }
