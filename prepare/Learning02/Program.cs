@@ -9,6 +9,6 @@ class Program
         job1._JobTitle = "custodial";
         job1._StartYear = "2022";
         job1._EndYear = "2023";
-        job1.ShowJobInformation();
+        job1.DisplayJobDetails();
     }
 }
