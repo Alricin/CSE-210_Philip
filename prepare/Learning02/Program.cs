@@ -20,5 +20,7 @@ class Program
         resume1._EmployeeName = "Philip";
         resume1._job.Add(job1);
         resume1._job.Add(job2);
+
+        resume1.Display();
     }
 }
