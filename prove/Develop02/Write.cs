@@ -11,6 +11,11 @@ public class Write
         JournalPrompt.Add("How did I see the hand of the Lord in my life today?");
         JournalPrompt.Add("What was the strongest emotion I felt today?");
         JournalPrompt.Add("If I had one thing I could do over today, what would it be?");
+        JournalPrompt.Add("What was something I accomplished today?");
+        JournalPrompt.Add("What have I learned today?");
+        JournalPrompt.Add("What did I read in the scriptures today?");
+        JournalPrompt.Add("What did you eat today that you enjoyed?");
+        JournalPrompt.Add("What was a funny joke you thought of or heard today?");
 
     }
 
