@@ -1,6 +1,8 @@
-using System;
+using System.Collections.Generic;
 
-public class Wtite
+public class Write
 {
+    List<string> JournalPrompts = new List<string>();
+
 
 }
