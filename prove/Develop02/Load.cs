@@ -7,7 +7,7 @@ public class Load
 
     public Load()
     {
-
+        ChooseTextFile();
     }
 
     public void ChooseTextFile()
