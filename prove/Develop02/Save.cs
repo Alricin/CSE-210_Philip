@@ -31,7 +31,7 @@ public class Save
         string fileName = $"{JournalName}.txt";
         using (StreamWriter outputFile = new StreamWriter(fileName))
         {
-            outputFile.WriteLine(DateAndTime);
+            outputFile.WriteLine($"{DateAndTime} /");
             outputFile.WriteLine(UsersEntry);
         }
     }
