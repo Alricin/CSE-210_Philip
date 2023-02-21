@@ -18,11 +18,6 @@ public class Load
     public void WriteJournalIntoString()
     {
         string FileName = JournalName;
-        string[] lines = System.IO.File.ReadAllLines(FileName);
-
-        foreach (string line in lines)
-        {
-            
-        }
+        string[] JournalText = System.IO.File.ReadAllLines(FileName);  
     }
 }
