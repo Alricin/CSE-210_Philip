@@ -2,11 +2,11 @@ using System;
 
 public class Menu
 {
-    public int _SelectionValue = 0;
-    
+    public int _SelectionValue;
+
     public Menu()
     {
-
+        SelectionScreen();
     }
 
     public void SelectionScreen()
@@ -19,4 +19,9 @@ public class Menu
         Console.WriteLine("5. Quit");
     }
     
+    public string ChooseJournalAction()
+    {
+        string UserChoice = Console.ReadLine();
+        return UserChoice;
+    }
 }
