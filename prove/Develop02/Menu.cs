@@ -19,9 +19,9 @@ public class Menu
         Console.WriteLine("5. Quit");
     }
     
-    public string ChooseJournalAction()
+    public void ChooseJournalAction()
     {
         string UserChoice = Console.ReadLine();
-        return UserChoice;
+        _SelectionValue = int.Parse(UserChoice);
     }
 }
