@@ -22,6 +22,24 @@ public class Fraction
         _numerator = top;
         _denominator = bottom;
     }
+
+    public int GetNumerator()
+    {
+        return _numerator;
+    }
+    public void SetNumerator(int numerator)
+    {
+        numerator = _numerator;
+    }
+
+    public int GetDenominator()
+    {
+        return _denominator;
+    }
+    public void SetDenominator(int denominator)
+    {
+        denominator = _denominator;
+    }
     
 
 }
