@@ -48,7 +48,13 @@ public class Fraction
 
     public float GetDecimal()
     {
-        return _numerator/_denominator;
+        return (double)_numerator/(double)_denominator;
+    }
+
+    public void PrintDecimalAndFraction()
+    {
+        Console.WriteLine(GetFractionString());
+        Console.WriteLine(GetDecimalValue());
     }
 
 }
