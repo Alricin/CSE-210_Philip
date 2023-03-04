@@ -46,7 +46,7 @@ public class Fraction
         return $"{_numerator}/{_denominator}";
     }
 
-    public float GetDecimal()
+    public double GetDecimalValue()
     {
         return (double)_numerator/(double)_denominator;
     }
