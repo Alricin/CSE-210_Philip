@@ -41,5 +41,14 @@ public class Fraction
         denominator = _denominator;
     }
     
+    public string GetFractionString()
+    {
+        return $"{_numerator}/{_denominator}";
+    }
+
+    public float GetDecimal()
+    {
+        return _numerator/_denominator;
+    }
 
 }
