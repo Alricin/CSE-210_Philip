@@ -2,7 +2,7 @@ using System;
 
 public class Reference
 {
-    private int _reference;
+    private string _reference;
 
     public Reference()
     {
