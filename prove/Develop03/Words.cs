@@ -20,9 +20,27 @@ public class Words
         _ScriptureLength = word.Length;
     }
 
+    public void CreateVisibilityList()
+    {
+        for (int i = 0; i < _ScriptureLength; i=i+1)
+        {
+            WordVisibility.Add(true);
+        }
+    }
+
 
     public void DisplayCurrentText()
     {
-
+        for (int i = 0; i < _ScriptureLength; i=i+1)
+        {
+            if (WordVisibility[i] == true)
+            {
+                Console.Write(word[i]);
+            }
+            else if (WordVisibility[i] == false)
+            {
+                Console.Write("_____");
+            }
+        }
     }
 }
