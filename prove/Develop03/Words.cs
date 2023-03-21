@@ -3,7 +3,6 @@ using System;
 public class Words
 {
     private string _ScriptureText;
-    private string _HiddenWord;
     private string[] word;
     private int _ScriptureLength;
     private List<bool> WordVisibility = new List<bool>();
@@ -12,6 +11,7 @@ public class Words
     {
         _ScriptureText = ScriptureText;
         SplitTextToWords();
+        CreateVisibilityList();
     }
 
     public void SplitTextToWords()
@@ -27,7 +27,25 @@ public class Words
             WordVisibility.Add(true);
         }
     }
+    public void HideWords()
+    {
+        Random rnd = new Random();
+        int WordToHide = rnd.Next(1, _ScriptureLength);
+        WordVisibility[WordToHide] = false;
+    }
 
+    public bool EndWordHiding()
+    {
+        bool EndingState = true;
+        for (int i=0; i < _ScriptureLength; i=i+1)
+        {
+            if (WordVisibility[i] == true)
+            {
+                EndingState = false;
+            }
+        }
+        return EndingState;
+    }
 
     public void DisplayCurrentText()
     {
