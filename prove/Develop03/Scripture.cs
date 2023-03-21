@@ -4,7 +4,7 @@ public class Scripture
 {
     private string _reference;
 
-    public void scripture(string ScriptureReference)
+    public Scripture(string ScriptureReference)
     {
         _reference = ScriptureReference;
 
