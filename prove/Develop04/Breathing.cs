@@ -2,7 +2,7 @@ using System;
 
 class Breathing : Activity
 {
-    int Duration;
+    private int Duration;
     public Breathing(int Duration) : base(Duration) 
     {
 

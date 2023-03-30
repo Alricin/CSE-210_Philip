@@ -2,9 +2,9 @@ using System;
 
 class Reflection: Activity
 {
-    string _prompt;
-    string questions;
-    int Duration;
+    private string _prompt;
+    private string questions;
+    private int Duration;
     
     public Reflection(int Duration) : base(Duration)
     {

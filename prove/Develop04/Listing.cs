@@ -2,10 +2,10 @@ using System;
 
 class Listing : Activity
 {
-    int Duration;
-    string ListingPrompt;
-    List<string> ListingPromptList = new List<string>();
-    List<string> UserList = new List<string>();
+    private int Duration;
+    private string ListingPrompt;
+    private List<string> ListingPromptList = new List<string>();
+    private List<string> UserList = new List<string>();
     
     public Listing(int Duration):base(Duration)
     {
