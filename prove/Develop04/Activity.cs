@@ -10,10 +10,7 @@ class Activity
     {
 
     }
-    public int GetDuration()
-    {
-        return _Duration;
-    }
+
     public string GetActivityType()
     {
         return _ActivityType;
