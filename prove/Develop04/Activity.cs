@@ -6,9 +6,17 @@ class Activity
     private string Duration;
     protected string _ActivityType;
 
-    public Activity()
+    public Activity(int _Duration)
     {
 
+    }
+    public int GetDuration()
+    {
+        return _Duration;
+    }
+    public string GetActivityType()
+    {
+        return _ActivityType;
     }
 
     public void DisplayStartingMessage()
