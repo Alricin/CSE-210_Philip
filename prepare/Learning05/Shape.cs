@@ -4,9 +4,9 @@ class Shape
 {
     private string _color;
     
-    public Shape()
+    public Shape(string ShapeColor)
     {
-
+        _color = ShapeColor;
     }
     public void SetShapeColor(string Color)
     {
