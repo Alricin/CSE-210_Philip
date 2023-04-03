@@ -14,6 +14,10 @@ class Program
         Items.Add(Object2);
         Items.Add(Object3);
 
-        
+        for (int i=0; i < Items.Count(), i = i+1)
+        {
+            Console.WriteLine(Items[i].GetArea());
+            Console.WriteLine(Items[i].GetShapeColor());
+        }
     }
 }
