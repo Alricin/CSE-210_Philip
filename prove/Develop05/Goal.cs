@@ -2,9 +2,9 @@ using System;
 
 class Goal
 {
-    private string _GoalText;
-    private string _GoalDescription;
-    private int _GoalPoints;
+    protected string _GoalText;
+    protected string _GoalDescription;
+    protected int _GoalPoints;
     public Goal(string GoalText, string GoalDescription, int GoalPoints)
     {
         _GoalText = GoalText;
