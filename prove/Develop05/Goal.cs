@@ -2,37 +2,21 @@ using System;
 
 class Goal
 {
-    protected string _GoalText;
-    protected string _GoalDescription;
-    protected int _GoalPoints;
-    public Goal(string GoalText, string GoalDescription, int GoalPoints)
+    string _GoalName;
+    int _Points;
+
+    public Goal(string GoalName, int Points)
     {
-        _GoalText = GoalText;
-        _GoalDescription = GoalDescription;
-        _GoalPoints = GoalPoints;
+        _GoalName = GoalName;
+        _Points = Points;
     }
 
-    public string GetGoalText()
+    public int GetPoints()
     {
-        return _GoalText;
+        return _Points;
     }
 
-    public string GetGoalDescription()
+    public virtual void CalculatePointsEarned()
     {
-        return _GoalDescription;
-    }
-
-    public int GetGoalPoints()
-    {
-        return _GoalPoints;
-    }
-
-    public int AddPoints()
-    {
-        return CalculatePoints();
-    }
-    public virtual int CalculatePoints()
-    {
-        return 0;
     }
 }
