@@ -4,7 +4,7 @@ class Checklist:Goal
 {
     int _TimesDone;
     int _GoalTimes;
-    Checklist(string GoalName, int Points, int TimesDone, int GoalTimes):base(GoalName, Points)
+    public Checklist(string GoalName, int Points, int TimesDone, int GoalTimes):base(GoalName, Points)
     {
         _TimesDone = TimesDone;
         _GoalTimes = GoalTimes;
