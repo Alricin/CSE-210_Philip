@@ -2,8 +2,8 @@ using System;
 
 class Goal
 {
-    string _GoalName;
-    int _Points;
+    protected string _GoalName;
+    protected int _Points;
 
     public Goal(string GoalName, int Points)
     {
