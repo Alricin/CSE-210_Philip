@@ -2,8 +2,8 @@ using System;
 
 class Person
 {
-    string _Name;
-    string _Sex;
+    protected string _Name;
+    protected string _Sex;
     public Person()
     {
 
