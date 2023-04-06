@@ -8,7 +8,7 @@ class TownJobs
     {
 
     }
-    public void AddJobs()
+    public virtual void AddJobs()
     {
         Occupations.Add("Actor");
         Occupations.Add("Arborist");

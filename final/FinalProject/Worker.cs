@@ -7,6 +7,13 @@ class Worker: Person
     {
 
     }
+
+    public void ChooseOccupation()
+    {
+        TownJobs Job = new TownJobs();
+        _Occupation = Job.ChooseJob();
+
+    }
     public override string CompileInformation()
     {
         return $"{_Name}, {_Sex}, {_Occupation}";

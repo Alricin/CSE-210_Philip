@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        Console.WriteLine("Welcome to the random town generator");
+        Console.WriteLine("What will be your town name?");
+        string TownName = Console.ReadLine();
     }
 }
