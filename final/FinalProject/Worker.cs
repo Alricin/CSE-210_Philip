@@ -8,11 +8,21 @@ class Worker: Person
 
     }
 
-    public void ChooseOccupation()
+    public void ChoosePoliticalOccupation()
     {
-        TownJobs Job = new TownJobs();
+        PoliticalJobs Job = new PoliticalJobs();
         _Occupation = Job.ChooseJob();
 
+    }
+    public void ChooseArtisanJob()
+    {
+        ArtisanJobs Job = new ArtisanJobs();
+        _Occupation = Job.ChooseJob();
+    }
+    public void ChooseAgriculturalJob()
+    {
+        AgriculturalJobs Job = new AgriculturalJobs();
+        _Occupation = Job.ChooseJob();
     }
     public override string CompileInformation()
     {
