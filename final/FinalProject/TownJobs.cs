@@ -36,6 +36,7 @@ class TownJobs
     }
     public string ChooseJob()
     {
+        AddJobs();
         return Occupations[rnd.Next(0,Occupations.Count)];
     }
 }
