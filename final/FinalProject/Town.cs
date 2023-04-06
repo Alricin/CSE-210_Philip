@@ -2,10 +2,10 @@ using System;
 
 class Town
 {
-    string _TownName;
-    string _TownType;
-    int _population;
-    Random rnd = new Random();
+    private string _TownName;
+    private string _TownType;
+    private int _population;
+    private Random rnd = new Random();
     public Town()
     {
 
@@ -40,6 +40,10 @@ class Town
         {
             _population = rnd.Next(6000,25000);
         }
+    }
+    public int ReturnPopulationNumbers()
+    {
+        return _population;
     }
 
 }

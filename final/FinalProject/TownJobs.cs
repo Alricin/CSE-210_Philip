@@ -2,7 +2,7 @@ using System;
 
 class TownJobs
 {
-    List<string> Occupations = new List<string>();
+    protected List<string> Occupations = new List<string>();
     Random rnd = new Random();
     public TownJobs()
     {
