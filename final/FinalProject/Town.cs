@@ -45,5 +45,9 @@ class Town
     {
         return _population;
     }
+    public string ReturnTownName()
+    {
+        return _TownName;
+    }
 
 }
