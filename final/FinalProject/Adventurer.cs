@@ -5,7 +5,6 @@ class Adventurer: Person
     List<int> _StatList = new List<int>();
     Random rnd = new Random();
     string _Class;
-    int Level;
     public Adventurer()
     {
 
@@ -39,6 +38,8 @@ class Adventurer: Person
     }
     public override string CompileInformation()
     {
-        return $"{_Name}, {_Sex}, {_Class}:{Level}, {_StatList[0]}, {_StatList[1]},{_StatList[2]},{_StatList[3]},{_StatList[4]},{_StatList[5]},";
+        GenerateStats();
+        ChooseClass();
+        return $"{_Name}, {_Sex}, {_Class}, {_StatList[0]}, {_StatList[1]},{_StatList[2]},{_StatList[3]},{_StatList[4]},{_StatList[5]},";
     }
 }
